@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFix Repairs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>TechFix</span>
+                    <span class="highlight">Repairs</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-toggle">
+                    <button id="theme-btn">Dark Mode</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Expert Tech Repair Services</h1>
+                <p>Fast, reliable repairs for your devices at affordable prices.</p>
+                <button class="cta-btn" id="hero-btn">Book a Repair</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="phone">Phone Repair</button>
+                    <button class="tab-btn" data-tab="laptop">Laptop Repair</button>
+                    <button class="tab-btn" data-tab="tablet">Tablet Repair</button>
+                    <button class="tab-btn" data-tab="desktop">Desktop Repair</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-panel active" id="phone-panel">
+                        <img src="https://images.unsplash.com/photo-1581993192008-63e896f4f744?w=800&auto=format&fit=crop" alt="Phone Repair">
+                        <h3>Phone Repair Services</h3>
+                        <p>We fix all types of phones, including screen replacements, battery upgrades, water damage repair, and more.</p>
+                    </div>
+                    <div class="tab-panel" id="laptop-panel">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800&auto=format&fit=crop" alt="Laptop Repair">
+                        <h3>Laptop Repair Services</h3>
+                        <p>Get your laptop fixed with our expert repair services for screens, keyboards, batteries, and hardware upgrades.</p>
+                    </div>
+                    <div class="tab-panel" id="tablet-panel">
+                        <img src="https://images.unsplash.com/photo-1589739900875-8418aeeb4596?w=800&auto=format&fit=crop" alt="Tablet Repair">
+                        <h3>Tablet Repair Services</h3>
+                        <p>From cracked screens to battery issues, we handle all tablet repairs with precision and care.</p>
+                    </div>
+                    <div class="tab-panel" id="desktop-panel">
+                        <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=800&auto=format&fit=crop" alt="Desktop Repair">
+                        <h3>Desktop Repair Services</h3>
+                        <p>Complete desktop computer repair services including hardware upgrades, virus removal, and system optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Work Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-nav">
+                    <button id="prev-btn">&lt;</button>
+                    <button id="next-btn">&gt;</button>
+                </div>
+                <div class="gallery-wrapper">
+                    <div class="gallery-slide active">
+                        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&auto=format&fit=crop" alt="Repair Work 1">
+                        <p>iPhone screen replacement</p>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1598986646512-9330bcc4c0dc?w=800&auto=format&fit=crop" alt="Repair Work 2">
+                        <p>Laptop motherboard repair</p>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1597225244660-1cd128c64284?w=800&auto=format&fit=crop" alt="Repair Work 3">
+                        <p>Samsung tablet screen replacement</p>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1601737487795-dab272f52437?w=800&auto=format&fit=crop" alt="Repair Work 4">
+                        <p>PC component upgrade</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Book a Repair</h2>
+            <form id="repair-form">
+                <div class="form-group">
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" required>
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="device">Device Type*</label>
+                    <select id="device" required>
+                        <option value="">Select your device</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="desktop">Desktop</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message" id="device-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="issue">Describe the Issue*</label>
+                    <textarea id="issue" rows="4" required></textarea>
+                    <span class="error-message" id="issue-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Create Account Password (Optional)</label>
+                    <input type="password" id="password">
+                    <span class="error-message" id="password-error"></span>
+                    <small>Password must be at least 8 characters with numbers and special characters.</small>
+                </div>
+                <div class="form-actions">
+                    <button type="reset" id="reset-btn">Reset Form</button>
+                    <button type="submit" id="submit-btn">Submit Request</button>
+                </div>
+            </form>
+            <div id="form-success" class="hidden">
+                <h3>Thank you for your submission!</h3>
+                <p>We'll contact you shortly to confirm your repair appointment.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>TechFix</span>
+                    <span class="highlight">Repairs</span>
+                </div>
+                <div class="footer-info">
+                    <p>123 Tech Street, Repair City</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@techfixrepairs.com</p>
+                </div>
+                <div class="footer-hours">
+                    <p><strong>Business Hours:</strong></p>
+                    <p>Monday-Friday: 9AM-6PM</p>
+                    <p>Saturday: 10AM-4PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TechFix Repairs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="secret-popup" class="popup hidden">
+        <div class="popup-content">
+            <h3>🎉 You Found the Secret!</h3>
+            <p>Enjoy 10% off your next repair service!</p>
+            <p>Use code: <strong>TECHFIX10</strong></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
